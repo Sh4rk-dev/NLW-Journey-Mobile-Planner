@@ -1,4 +1,5 @@
 import "@/styles/global.css";
+import "@/utils/dayjsLocaleConfig";
 
 import { Slot } from "expo-router";
 import { StatusBar, View } from "react-native";
@@ -18,7 +19,7 @@ export default function Layout() {
   });
 
   if (!fontsLoaded) {
-    return <Loading/>
+    return <Loading />;
   }
 
   return (

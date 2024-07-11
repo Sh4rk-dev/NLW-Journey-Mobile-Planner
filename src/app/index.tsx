@@ -211,9 +211,9 @@ export default function Index() {
           <IconCalendar color={colors.zinc[400]} size={20} />
           <Input.Field
             placeholder="Quando?"
+            editable={stepForm === StepForm.TRIP_DETAILS}
             showSoftInputOnFocus={false}
             onFocus={() => Keyboard.dismiss()}
-            editable={stepForm === StepForm.TRIP_DETAILS}
             onPressIn={() =>
               stepForm === StepForm.TRIP_DETAILS && setShowModal(MODAL.CALENDAR)
             }
